@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Projekt Mobilne</string>
+    <string name="title">Notes</string>
+    <string name="new_note">New note</string>
+    <string name="clear">Remove all</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="note_text">Note text…</string>
+    <string name="save">Save</string>
+    <string name="edit_last_note">Edit last note</string>
+</resources>

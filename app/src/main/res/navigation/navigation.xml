@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    app:startDestination="@id/notesFragment">
+
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.projektmobilne.notes.NotesFragment"
+        android:label="NotesFragment" >
+        <action
+            android:id="@+id/action_notesFragment_to_editorFragment"
+            app:destination="@+id/editorFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/editorFragment"
+        android:name="com.example.projektmobilne.editor.EditorFragment"
+        android:label="EditorFragment" >
+        <action
+            android:id="@+id/action_editorFragment_to_notesFragment"
+            app:destination="@id/notesFragment"
+            app:launchSingleTop="false"
+            app:popUpTo="@+id/notesFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="noteId"
+            app:argType="long" />
+    </fragment>
+</navigation>
